@@ -1,12 +1,13 @@
 import firebase, { googleAuthProvider } from "../firebase/firebase";
+import { history } from "../router/AppRouter";
 
 const LOG_OUT = "LOG_OUT";
 const LOG_IN = "LOG_IN";
 
-const login = (uid) => ({
+const login = (user) => ({
   type: LOG_IN,
   payload: {
-    uid
+    user
   }
 });
 
@@ -16,10 +17,8 @@ const logout = () => ({
 });
 
 const start__login = () => (dispatch) => {
-  firebase
-    .auth()
-    .signInWithPopup(googleAuthProvider)
-    .then((result) => console.log(result));
+  firebase.auth().signInWithPopup(googleAuthProvider);
+  history.push("/dashboard");
 };
 
 const start__logout = () => {

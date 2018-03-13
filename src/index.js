@@ -14,7 +14,7 @@ const appRoot = document.getElementById("root");
 const store = configureStore();
 console.log("<-------- Initial State ----->\n");
 console.log(store.getState());
-console.log("<-------- Initial State ----->\n");
+console.log("<-------- Initial State End ----->\n");
 
 let ComposedApp = () => (
   <Provider store={store}>
@@ -36,14 +36,16 @@ if (appRoot) {
     if (user) {
       console.log("<------- On Login --------->");
       console.log(`${user.displayName} Logged In!`);
+      console.log("<------- On Login --------->");
       /** Pass user uid to redux */
-      login(user.uid);
+      store.dispatch(login(user));
       renderedApp();
     } else {
       console.log("<------- On Logout --------->");
       console.log("User Logged Out!");
+      console.log("<------- On Logout --------->");
       /** Pass logout state to redux */
-      logout();
+      store.dispatch(logout());
       renderedApp();
     }
   });

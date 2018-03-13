@@ -21,10 +21,11 @@
   width: 100%;
   padding: 1rem;
   margin-bottom: 1rem;
-  img {
-    vertical-align: middle;
-    height: 120px;
-    width: 120px;
+  h1 {
+    font-family: $bebas;
+    font-size: 56px;
+    line-height: 56px * 1.618;
+    text-align: center;
   }
 }
 

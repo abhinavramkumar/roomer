@@ -8,7 +8,7 @@ const LoginPage = (props) => (
       <div className="flex-row centered">
         <form className="LoginPageForm">
           <div className="LoginPageForm__Logo">
-            <img src="" alt="Logo" />
+            <h1>Roomer</h1>
           </div>
           <button
             className="btn btn-primary LoginPageForm__LoginButton"

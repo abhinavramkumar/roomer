@@ -3,10 +3,10 @@ import * as firebase from "firebase";
 // Initialize Firebase
 var config = {
   apiKey: "AIzaSyAc5Cb1VKyLTjyZKI_PBRmzurF2so1RK5w",
-  authDomain: "tenant-manager.firebaseapp.com",
-  databaseURL: "https://tenant-manager.firebaseio.com",
-  projectId: "tenant-manager",
-  storageBucket: "tenant-manager.appspot.com",
+  authDomain: "tennant-manager.firebaseapp.com",
+  databaseURL: "https://tennant-manager.firebaseio.com",
+  projectId: "tennant-manager",
+  storageBucket: "tennant-manager.appspot.com",
   messagingSenderId: "326384595170"
 };
 

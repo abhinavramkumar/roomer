@@ -1,0 +1,117 @@
+.SideBar {
+  flex-basis: 200px;
+  height: 100vh;
+  box-shadow: 1px 0px 10px 0 rgba(#000, 0.125);
+}
+
+.SideBar__Head {
+}
+
+.SideBar__Logo {
+  h1 {
+    font-family: $bebas;
+    font-size: 42px;
+    line-height: 42px * 1.618;
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
+.SideBar__Profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 3rem;
+  img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-bottom: 1.75rem;
+  }
+  button {
+    position: absolute;
+    top: 52px;
+    right: 65px;
+    margin: 0;
+    padding: 0.25rem;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    background-color: white;
+    color: #aaa;
+    box-shadow: 0 10px 7px 0 rgba(#000, 0.125);
+    cursor: pointer;
+    &:hover {
+      color: orange;
+    }
+  }
+  p {
+    font-family: $roboto-c;
+    color: #aaa;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    font-size: 13px;
+    line-height: 13px * 1.618;
+  }
+}
+
+.SideBar__Links {
+  margin: 3rem 0;
+  color: #aaa;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.SideBar__Link {
+  width: 100%;
+  a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    font-family: $roboto-c;
+    color: #aaa;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    font-size: 13px;
+    line-height: 13px * 1.618;
+    border-left: 3px solid transparent;
+    text-decoration: none;
+    &:hover {
+      color: orange;
+      border-left: 3px solid orange;
+    }
+  }
+  svg {
+    margin-right: 0.5rem;
+  }
+  &.active {
+    a {
+      color: orange;
+      border-left: 3px solid orange;
+    }
+  }
+}
+
+.SideBar__Footer {
+  margin: 3rem 0 0 0;
+  padding: 1rem 1.5rem;
+  color: #aaa;
+  hr {
+    width: 20%;
+    border-color: #aaa;
+    margin: 1rem 0;
+  }
+  p {
+    font-size: 13px;
+    line-height: 13px * 1.618;
+    font-family: $roboto-c;
+    color: #aaa;
+  }
+  .SideBar__Footer-Text {
+    color: #aaa;
+  }
+}
