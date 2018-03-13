@@ -1,16 +1,14 @@
 export default (state = [], { type, payload }) => {
   switch (type) {
-    case "ADD_TENNANT":
-      return [...state, payload.tennant];
+    case "ADD_TENANT":
+      return [...state, payload.tenant];
 
-    case "EDIT_TENNANT":
-      let remainingTennants = state.filter(
-        (tennant) => tennant.id !== payload.id
-      );
-      return [...remainingTennants, payload.updatedTennant];
+    case "EDIT_TENANT":
+      let remainingTenants = state.filter((tenant) => tenant.id !== payload.id);
+      return [...remainingTenants, payload.updatedTenant];
 
-    case "REMOVE_TENNANT":
-      return state.filter((tennant) => tennant.id !== payload.id);
+    case "REMOVE_TENANT":
+      return state.filter((tenant) => tenant.id !== payload.id);
 
     default:
       return state;

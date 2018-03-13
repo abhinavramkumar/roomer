@@ -3,7 +3,7 @@ import {
   AuthReducer,
   MessagesReducer,
   PropertiesReducer,
-  TennantsReducer
+  TenantsReducer
 } from "../reducers";
 import thunk from "redux-thunk";
 
@@ -15,7 +15,7 @@ export default () => {
       auth: AuthReducer,
       messages: MessagesReducer,
       properties: PropertiesReducer,
-      tennants: TennantsReducer
+      tenants: TenantsReducer
     }),
     composeEnhancers(applyMiddleware(thunk))
   );

@@ -1,6 +1,6 @@
 import AdminProfilePage from "./AdminProfilePage/AdminProfilePage";
 import CreatePropertiesPage from "./CreatePropertiesPage/CreatePropertiesPage";
-import CreateTennantsPage from "./CreateTennantsPage/CreateTennantsPage";
+import CreateTenantsPage from "./CreateTenantsPage/CreateTenantsPage";
 import DashboardPage from "./DashboardPage/DashboardPage";
 import Loader from "./Loader/Loader";
 import LoginPage from "./LoginPage/LoginPage";
@@ -10,9 +10,9 @@ import PropertiesPage from "./PropertiesPage/PropertiesPage";
 import SearchBar from "./SearchBar/SearchBar";
 import SideBar from "./SideBar/SideBar";
 import Summary from "./Summary/Summary";
-import Tennant from "./Tennant/Tennant";
-import TennantsPage from "./TennantsPage/TennantsPage";
-import TennantsProfilePage from "./TennantsProfilePage/TennantsProfilePage";
+import Tenant from "./Tenant/Tenant";
+import TenantsPage from "./TenantsPage/TenantsPage";
+import TenantsProfilePage from "./TenantsProfilePage/TenantsProfilePage";
 import NotFoundPage from "./NotFoundPage/NotFoundPage";
 import App from "./App.js";
 
@@ -20,7 +20,7 @@ export {
   AdminProfilePage,
   App,
   CreatePropertiesPage,
-  CreateTennantsPage,
+  CreateTenantsPage,
   DashboardPage,
   Loader,
   LoginPage,
@@ -31,7 +31,7 @@ export {
   SearchBar,
   SideBar,
   Summary,
-  Tennant,
-  TennantsPage,
-  TennantsProfilePage
+  Tenant,
+  TenantsPage,
+  TenantsProfilePage
 };

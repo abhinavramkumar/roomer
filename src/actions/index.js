@@ -10,10 +10,10 @@ import {
   start__editProperty
 } from "./properties";
 import {
-  start__addTennant,
-  start__removeTennant,
-  start__editTennant
-} from "./tennants";
+  start__addTenant,
+  start__removeTenant,
+  start__editTenant
+} from "./tenants";
 
 export {
   login,
@@ -26,7 +26,7 @@ export {
   start__addProperty,
   start__removeProperty,
   start__editProperty,
-  start__addTennant,
-  start__removeTennant,
-  start__editTennant
+  start__addTenant,
+  start__removeTenant,
+  start__editTenant
 };

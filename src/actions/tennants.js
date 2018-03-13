@@ -1,44 +1,44 @@
-const ADD_TENNANT = "ADD_TENNANT";
-const REMOVE_TENNANT = "REMOVE_TENNANT";
-const EDIT_TENNANT = "EDIT_TENNANT";
+const ADD_TENANT = "ADD_TENANT";
+const REMOVE_TENANT = "REMOVE_TENANT";
+const EDIT_TENANT = "EDIT_TENANT";
 
 /** Action Generators */
-const addTennant = (tennant) => ({
-  type: ADD_TENNANT,
+const addTenant = (tenant) => ({
+  type: ADD_TENANT,
   payload: {
-    tennant
+    tenant
   }
 });
 
-const removeTennant = (id) => ({
-  type: REMOVE_TENNANT,
+const removeTenant = (id) => ({
+  type: REMOVE_TENANT,
   payload: {
     id
   }
 });
 
-const editTennant = (id, updatedTennant) => ({
-  type: EDIT_TENNANT,
+const editTenant = (id, updatedTenant) => ({
+  type: EDIT_TENANT,
   payload: {
     id,
-    updatedTennant
+    updatedTenant
   }
 });
 
 /** Async Action Generator Thunks */
-const start__addTennant = (tennant = {}) => (dispatch) => {
-  console.log("Asnc Add Tennant");
-  return dispatch(addTennant(tennant));
+const start__addTenant = (tenant = {}) => (dispatch) => {
+  console.log("Asnc Add Tenant");
+  return dispatch(addTenant(tenant));
 };
 
-const start__removeTennant = (id = "") => (dispatch) => {
-  console.log("Async Remove Tennant");
-  return dispatch(removeTennant(id));
+const start__removeTenant = (id = "") => (dispatch) => {
+  console.log("Async Remove Tenant");
+  return dispatch(removeTenant(id));
 };
 
-const start__editTennant = (id = "", updatedTennant = {}) => (dispatch) => {
-  console.log("Async Edit Tennant");
-  return dispatch(editTennant(id, updatedTennant));
+const start__editTenant = (id = "", updatedTenant = {}) => (dispatch) => {
+  console.log("Async Edit Tenant");
+  return dispatch(editTenant(id, updatedTenant));
 };
 
-export { start__addTennant, start__removeTennant, start__editTennant };
+export { start__addTenant, start__removeTenant, start__editTenant };

@@ -1,6 +1,6 @@
 import AuthReducer from "./auth";
 import MessagesReducer from "./messages";
 import PropertiesReducer from "./properties";
-import TennantsReducer from "./tennants";
+import TenantsReducer from "./tenants";
 
-export { AuthReducer, MessagesReducer, PropertiesReducer, TennantsReducer };
+export { AuthReducer, MessagesReducer, PropertiesReducer, TenantsReducer };

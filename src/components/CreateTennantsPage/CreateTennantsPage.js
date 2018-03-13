@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
-class CreateTennantsPage extends Component {
+class CreateTenantsPage extends Component {
   render() {
-    return <div className="CreateTennantsPage">Create Tennants Page</div>;
+    return <div className="CreateTenantsPage">Create Tenants Page</div>;
   }
 }
 
-export default CreateTennantsPage;
+export default CreateTenantsPage;

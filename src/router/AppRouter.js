@@ -9,9 +9,9 @@ import {
   AdminProfilePage,
   PropertiesPage,
   MessagesPage,
-  TennantsProfilePage,
+  TenantsProfilePage,
   CreatePropertiesPage,
-  CreateTennantsPage,
+  CreateTenantsPage,
   NotFoundPage
 } from "../components";
 
@@ -26,12 +26,12 @@ const AppRouter = (props) => (
         <PrivateRoute path="/admin" component={AdminProfilePage} />
         <PrivateRoute path="/properties" component={PropertiesPage} />
         <PrivateRoute path="/messages" component={MessagesPage} />
-        <PrivateRoute path="/:tennantid" component={TennantsProfilePage} />
+        <PrivateRoute path="/:tenantid" component={TenantsProfilePage} />
         <PrivateRoute
           path="/create/properties"
           component={CreatePropertiesPage}
         />
-        <PrivateRoute path="/create/tennants" component={CreateTennantsPage} />
+        <PrivateRoute path="/create/tenants" component={CreateTenantsPage} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>

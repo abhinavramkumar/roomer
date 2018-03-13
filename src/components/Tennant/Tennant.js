@@ -1,5 +1,5 @@
 import React from "react";
 
-const Tennant = (props) => <div className="Tennant">Tennant Component</div>;
+const Tenant = (props) => <div className="Tenant">Tenant Component</div>;
 
-export default Tennant;
+export default Tenant;

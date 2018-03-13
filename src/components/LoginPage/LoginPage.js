@@ -5,17 +5,19 @@ import { start__login } from "../../actions";
 const LoginPage = (props) => (
   <div className="LoginPage">
     <div className="container">
-      <form action="" className="LoginPageForm">
-        <div className="LoginPageForm__Logo">
-          <img src="" alt="Logo" />
-        </div>
-        <button
-          className="LoginPageForm__LoginButton"
-          onClick={props.startLogin}
-        >
-          Sign Up with Google
-        </button>
-      </form>
+      <div className="flex-row centered">
+        <form className="LoginPageForm">
+          <div className="LoginPageForm__Logo">
+            <img src="" alt="Logo" />
+          </div>
+          <button
+            className="btn btn-primary LoginPageForm__LoginButton"
+            onClick={props.startLogin}
+          >
+            Sign Up with Google
+          </button>
+        </form>
+      </div>
     </div>
   </div>
 );

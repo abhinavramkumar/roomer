@@ -1,0 +1,14 @@
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    font-size: 1rem;
+    line-height: 1.618 * 1rem;
+    text-transform: uppercase;
+    font-family: $roboto-c;
+    word-spacing: 2px;
+    cursor: pointer;
+}
+
+.btn.btn-primary {}
