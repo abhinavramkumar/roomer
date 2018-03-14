@@ -178,6 +178,16 @@ html {
   word-spacing: 2px;
   cursor: pointer; }
 
+.btn.btn-primary {
+  border: 1px solid orange;
+  background-color: orange;
+  color: #fff; }
+
+.btn.btn-small {
+  padding: 0.6rem 1.5rem;
+  font-size: 14px;
+  line-height: 22.652px; }
+
 .LoginPage {
   height: 100vh;
   background-color: #f3f5f7; }
@@ -298,5 +308,65 @@ html {
     color: #aaa; }
   .SideBar__Footer .SideBar__Footer-Text {
     color: #aaa; }
+
+.DashboardPage {
+  min-height: 100vh;
+  max-height: auto;
+  overflow-y: auto;
+  flex-basis: calc(100% - 200px);
+  padding: 1rem; }
+
+.OptionsBar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between; }
+  .OptionsBar button {
+    margin: 0 1.5rem; }
+
+.Summary {
+  padding: 0 1.5rem; }
+  .Summary h2 {
+    color: #aaa;
+    font-size: 48px;
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif; }
+    .Summary h2 span {
+      margin: 0 1rem;
+      font-family: "Roboto Mono", monospace;
+      font-size: 20px; }
+
+.SearchBar {
+  flex-basis: 400px;
+  padding: 0 1.5rem; }
+
+.SearchBar__Container {
+  position: relative;
+  border: 1px solid transparent;
+  width: 400px; }
+  .SearchBar__Container svg {
+    position: absolute;
+    left: 0;
+    top: 12.944px;
+    margin: 0;
+    margin-right: 1rem;
+    margin-left: 0.25rem;
+    color: #aaa; }
+
+.SearchBar__Input {
+  box-sizing: border-box;
+  display: block;
+  line-height: 22.652px;
+  font-size: 14px;
+  padding: 0.5rem 2.5rem;
+  padding-bottom: 0.5rem;
+  margin: 0;
+  border: 1px solid transparent;
+  color: #aaa;
+  width: 400px;
+  font-family: "Roboto Mono", monospace;
+  transition: all 200ms ease-in-out; }
+  .SearchBar__Input:focus {
+    outline: none;
+    border-bottom: 1px solid orange; }
 
 /*# sourceMappingURL=index.css.map */

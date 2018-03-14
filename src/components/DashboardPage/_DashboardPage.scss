@@ -1,0 +1,7 @@
+.DashboardPage {
+  min-height: 100vh;
+  max-height: auto;
+  overflow-y: auto;
+  flex-basis: calc(100% - 200px);
+  padding: 1rem;
+}

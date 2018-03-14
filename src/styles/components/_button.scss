@@ -11,4 +11,14 @@
     cursor: pointer;
 }
 
-.btn.btn-primary {}
+.btn.btn-primary {
+    border: 1px solid orange;
+    background-color: orange;
+    color: #fff;
+}
+
+.btn.btn-small {
+    padding: 0.6rem 1.5rem;
+    font-size: 14px;
+    line-height: 14px * 1.618;
+}
