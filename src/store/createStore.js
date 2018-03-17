@@ -1,6 +1,7 @@
 import { combineReducers, createStore, applyMiddleware, compose } from "redux";
 import {
   AuthReducer,
+  FiltersReducer,
   MessagesReducer,
   PropertiesReducer,
   TenantsReducer
@@ -13,6 +14,7 @@ export default () => {
   return createStore(
     combineReducers({
       auth: AuthReducer,
+      filters: FiltersReducer,
       messages: MessagesReducer,
       properties: PropertiesReducer,
       tenants: TenantsReducer

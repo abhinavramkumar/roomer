@@ -12,9 +12,12 @@ import "./styles/index.css";
 const appRoot = document.getElementById("root");
 
 const store = configureStore();
-console.log("<-------- Initial State ----->\n");
-console.log(store.getState());
-console.log("<-------- Initial State End ----->\n");
+
+//- DEBUG - View State Changes on every Action
+store.subscribe(() => {
+  console.log("<------------>\n");
+  console.log(store.getState());
+});
 
 let ComposedApp = () => (
   <Provider store={store}>

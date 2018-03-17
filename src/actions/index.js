@@ -14,6 +14,7 @@ import {
   start__removeTenant,
   start__editTenant
 } from "./tenants";
+import { start__setTextFilter } from "./filters";
 
 export {
   login,
@@ -28,5 +29,6 @@ export {
   start__editProperty,
   start__addTenant,
   start__removeTenant,
-  start__editTenant
+  start__editTenant,
+  start__setTextFilter
 };

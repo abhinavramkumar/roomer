@@ -1,13 +1,15 @@
 .Summary {
-  padding: 0 1.5rem;
+  padding: 0;
+  padding-right: $sp-2;
   h2 {
-    color: #aaa;
-    font-size: 48px;
+    color: $grey-dark;
+    font-size: $header-2;
     margin: 0;
-    font-family: $roboto-c;
+    font-family: $roboto;
+    letter-spacing: 0px;
     span {
-      margin: 0 1rem;
-      font-family: $roboto-m;
+      margin: 0 $sp-1;
+      font-family: $roboto;
       font-size: 20px;
     }
   }

@@ -1,8 +1,9 @@
 .OptionsBar {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    button {
-        margin: 0 1.5rem;
-    }
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  button {
+    margin: 0;
+    margin-left: $sp-2;
+  }
 }
