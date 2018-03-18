@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { SideBar, OptionsBar } from "../index";
+import { SideBar, OptionsBar, CreateTenantForm } from "../index";
 
 class DashboardPage extends Component {
   state = {
@@ -23,6 +23,7 @@ class DashboardPage extends Component {
             <OptionsBar addTenant={this.toggleAddTenantForm} />
 
             {/* Show CreateTenantForm if add tenant button is clicked in OptionsBar component  */}
+            {this.state.isShownAddTenantForm && <CreateTenantForm />}
           </div>
         </div>
       </div>

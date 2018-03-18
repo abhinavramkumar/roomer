@@ -1,5 +1,6 @@
 import AdminProfilePage from "./AdminProfilePage/AdminProfilePage";
 import CreatePropertiesPage from "./CreatePropertiesPage/CreatePropertiesPage";
+import CreateTenantForm from "./CreateTenantForm/CreateTenantForm";
 import CreateTenantsPage from "./CreateTenantsPage/CreateTenantsPage";
 import DashboardPage from "./DashboardPage/DashboardPage";
 import Loader from "./Loader/Loader";
@@ -20,6 +21,7 @@ export {
   AdminProfilePage,
   App,
   CreatePropertiesPage,
+  CreateTenantForm,
   CreateTenantsPage,
   DashboardPage,
   Loader,
